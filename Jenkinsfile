@@ -24,7 +24,7 @@ pipeline {
                                         clientSecretVariable: 'CLIENT_SECRET',
                                         tenantIdVariable: 'TENANT_ID')]) {
                     sh 'terraform init -upgrade'
-                    sh "terraform import terraform import azurerm_logic_app_standard.logicapp /subscriptions/${SUBS_ID}/resourceGroups/rg_abdel_proc/providers/Microsoft.Web/sites/logicapp1937"
+                    sh "terraform import azurerm_logic_app_standard.logicapp /subscriptions/${SUBS_ID}/resourceGroups/rg_abdel_proc/providers/Microsoft.Web/sites/logicapp1937"
                 }
             }
             }
